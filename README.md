@@ -94,6 +94,7 @@
 
 - Tạo nhánh mới theo cú pháp: `dev_<tên của bạn>`
 - Merge code từ `main` về nhánh mới để phát triển
+- Commit code lên **develop** , **không được** commit vào nhánh **main**
 
 ---
 
