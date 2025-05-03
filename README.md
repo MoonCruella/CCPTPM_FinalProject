@@ -82,8 +82,8 @@
 ### 💻 **3. Mở và chạy project**
 
 - Mở **IntelliJ IDEA**:
-  - `File → Open → demo` (trong thư mục clone)
-  - Mở file `application.yaml`, chỉnh sửa:
+  - `File → Open → demo` (trong thư mục *ekomart* của thư mục clone)
+  - Mở file `application.yaml`, chỉnh sửa phần cấu hình database:
     ```yaml
     username: <Tên người dùng MySQL>
     password: <Mật khẩu MySQL>
