@@ -64,9 +64,9 @@ Ekomart gồm có 3 role: USER, VENDOR, ADMIN.
 - **Bước 4:** Vào IntelliJ IDEA:
 
   - 4.1: File -> Open -> mở thư mục **_demo_** trong thư mục "ekomart" của thư mục ở bước 1
-  - 4.2: Vào file **_application.yaml_** chỉnh sửa phần **username** và **password** của phần cấu hình **datasource** tại dòng số 13 và 14
-    `username: root`
-    `password: Munlatrang.04`
+  - 4.2: Vào file **_application.yaml_** chỉnh sửa phần **username** và **password** của phần cấu hình **datasource** tại dòng số 13 và 14 
+    `username: máy của bạn `
+    `password: máy của bạn`
 
   - 4.3: Tiến hành **RUN** project trên đường dẫn: [http://localhost:8888](http://localhost:8888/login)
   - 4.4: Sau khi chạy được project, tiến hành tạo **branch** của bạn theo cú pháp : _"dev\_" + tên của bạn_ sau đó merge code từ nhánh main về
