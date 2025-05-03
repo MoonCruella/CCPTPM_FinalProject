@@ -64,7 +64,8 @@ Ekomart gồm có 3 role: USER, VENDOR, ADMIN.
 - **Bước 4:** Vào IntelliJ IDEA:
 
   - 4.1: File -> Open -> mở thư mục **_demo_** trong thư mục "ekomart" của thư mục ở bước 1
-  - 4.2: Vào file **_application.yaml_** chỉnh sửa phần **username** và **password** của phần cấu hình **datasource** tại dòng số 13 và 14 
+  - 4.2: Vào file **_application.yaml_** chỉnh sửa phần **username** và **password** của phần cấu hình **datasource** tại dòng số 13 và 14
+    
     `username: máy của bạn `
     `password: máy của bạn`
 
