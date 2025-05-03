@@ -82,7 +82,7 @@
 ### 💻 **3. Mở và chạy project**
 
 - Mở **IntelliJ IDEA**:
-  - `File → Open → **demo**` (trong thư mục clone)
+  - `File → Open → demo` (trong thư mục clone)
   - Mở file `application.yaml`, chỉnh sửa:
     ```yaml
     username: <Tên người dùng MySQL>
