@@ -1,80 +1,110 @@
-# CCPTPM_FinalProject
+# 🛒 **Ekomart - Website Bán Thực Phẩm**
 
-Nhóm 03 : Dự án Ekomart - Website bán thực phẩm
+## 👨‍💻 **Nhóm 03 - CCPTPM Final Project**
 
-## Thông tin thành viên nhóm 03:
+| Họ tên              | MSSV     |
+| ------------------- | -------- |
+| Lê Huỳnh Như Nguyệt | 22110385 |
+| Phạm Ngọc Hòa       | 22110330 |
+| Trần Trọng Nghĩa    | 22110380 |
+| Huỳnh Quốc Thắng    | 22110423 |
+| Lê Văn Tú           | 22110454 |
 
-- Lê Huỳnh Như Nguyệt - 22110385
-- Phạm Ngọc Hòa - 22110330
-- Trần Trọng Nghĩa - 22110380
-- Huỳnh Quốc Thắng - 22110423
-- Lê Văn Tú - 22110454
+---
 
-## Giới thiệu về Ekomart
+## 📌 **Giới Thiệu Dự Án**
 
-### Mục đích
+### 🎯 **Mục Đích**
 
-Website là môi trường trung gian kết nối người bán và người tiêu dùng
+**Ekomart** là một nền tảng thương mại điện tử kết nối **người tiêu dùng** và **nhà bán hàng**, mang lại trải nghiệm mua sắm tiện lợi, hiện đại.
 
-- Đối với người tiêu dùng:
-  Mang lại một môi trường mua sắm dễ dàng, thân thiện và dễ tiếp cận với mọi người trong đời sống hiện đại.
-  Tiết kiệm thời gian trong việc mua sắm
-- Đối với nhà bán hàng, doanh nghiệp:
-  Nhà bán hàng, nhãn hàng có thể dễ dàng đăng ký, quản lý sản phẩm và tiếp cận nhiều khách hàng hơn mà không cần đầu tư quá nhiều vào hạ tầng công nghệ.
-  Giúp các nhãn hàng mở rộng thị trường, tạo ra một môi trường cạnh tranh lành mạnh, đảm bảo chất lượng sản phẩm và dịch vụ
+- 👥 **Đối với người tiêu dùng:**
 
-## Hướng dẫn setup và build project
+  - Trải nghiệm mua sắm dễ dàng, thân thiện.
+  - Tiết kiệm thời gian trong cuộc sống bận rộn.
 
-### 1. Cơ chế vận hành trong Ekomart
+- 🛍️ **Đối với nhà bán hàng/doanh nghiệp:**
+  - Dễ dàng tiếp cận khách hàng mà không cần đầu tư nhiều vào công nghệ.
+  - Mở rộng thị trường, nâng cao chất lượng dịch vụ và cạnh tranh lành mạnh.
 
-Ekomart gồm có 3 role: USER, VENDOR, ADMIN.
+---
 
-- USER: là khách hàng để mua hàng. USER có quyền đăng ký để mở shop, đăng ký thành công tài khoản của USER sẽ vừa là khách vừa là nhà bán hàng.
+## ⚙️ **Cơ Chế Vận Hành**
 
-- VENDOR: là chủ cửa hàng/nhà bán hàng.
+**Hệ thống gồm 3 vai trò chính:**
 
-  - _Tạo/mở bán/ngừng bán_ sản phẩm
-  - _Quản lý/cập nhật trạng thái_ đơn hàng do USER mua
+- 👤 **USER (Khách hàng):**
 
-- ADMIN: là quản trị hệ thống.
-  - _Quản lý_ tài khoản người dùng
-  - _Duyệt_ USER đăng ký mở SHOP
-  - _Duyệt/quản lý_ tất cả sản phẩm do VENDOR thêm vào SHOP đó
-  - _Tạo/quản lý_ phân loại(Category) của sản phẩm
+  - Đăng ký tài khoản.
+  - Mua hàng.
+  - Đăng ký mở shop (trở thành VENDOR).
 
-### 2. Chuẩn bị công cụ
+- 🧑‍💼 **VENDOR (Nhà bán hàng):**
 
-- IntelliJ IDEA : dùng để chạy mã nguồn Java, Spring Boot,...
-- MySQL - MySQL Workbench : Hỗ trợ lưu trữ, quản lý cơ sở dữ liệu của dự án
-- Github và TortoiseGit : nhằm kiểm soát mã nguồn chặt chẽ, đảm bảo tính toàn vẹn của dự án, hỗ trợ theo dõi lịch sử thay đổi rõ ràng, đồng thời tối ưu hóa quy trình làm việc nhóm
-- Docker : Đóng gói ứng dụng backend/frontend, triển khai & chạy nhất quán giữa các máy
-- Postman : dùng để kiểm thử API
+  - Tạo/mở bán/ngừng bán sản phẩm.
+  - Quản lý và cập nhật trạng thái đơn hàng.
 
-### 3. Tiến hành setup
+- 👨‍💻 **ADMIN (Quản trị viên):**
+  - Quản lý người dùng.
+  - Duyệt shop mới và sản phẩm.
+  - Tạo/phân loại danh mục sản phẩm.
 
-- **Bước 1:** Tạo 1 thư mục trên máy -> clone đường dẫn git của dự án vào thư mục vừa tạo
+---
 
-- **Bước 2:** Tại ổ D trên máy, tạo 1 thư mục có tên: **_upload_** (bước này dùng để load được ảnh)
+## 🧰 **Công Cụ Sử Dụng**
 
-- **Bước 3:** Vào MySQL Workbench:
+| Công cụ                  | Mục đích                        |
+| ------------------------ | ------------------------------- |
+| **IntelliJ IDEA**        | Viết và chạy Java/Spring Boot   |
+| **MySQL Workbench**      | Quản lý cơ sở dữ liệu           |
+| **Docker**               | Đóng gói & triển khai ứng dụng  |
+| **Postman**              | Kiểm thử API                    |
+| **Github + TortoiseGit** | Quản lý mã nguồn, làm việc nhóm |
 
-  - 3.1: Tạo 1 DB tên: **_ekomart_**
-  - 3.2: Vào tab Server -> Data Import -> Chọn "Import from Dump Project Folder" -> Chọn thư mục **_db-web_** trong thư mục ở bước 1 -> Bấm "Start Import"
+---
 
-- **Bước 4:** Vào IntelliJ IDEA:
+## 🛠️ **Hướng Dẫn Setup Dự Án**
 
-  - 4.1: File -> Open -> mở thư mục **_demo_** trong thư mục "ekomart" của thư mục ở bước 1
-  - 4.2: Vào file **_application.yaml_** chỉnh sửa phần **username** và **password** của phần cấu hình **datasource** tại dòng số 13 và 14
-    `username: root`
-    `password: Munlatrang.04`
+### 🔧 **1. Cài đặt ban đầu**
 
-  - 4.3: Tiến hành **RUN** project trên đường dẫn: [http://localhost:8888](http://localhost:8888/login)
-  - 4.4: Sau khi chạy được project, tiến hành tạo **branch** của bạn theo cú pháp : _"dev\_" + tên của bạn_ sau đó merge code từ nhánh main về
+- **Bước 1:** Tạo thư mục → Clone repo dự án từ Github
+- **Bước 2:** Tạo thư mục tên `upload` tại ổ đĩa **D** _(dùng để lưu ảnh)_
 
-  * **LƯU Ý:**
-    - Các account trong project đều có password là: "123"
-    - Một số chức năng trong project còn bị lỗi chưa fix. Ví dụ: cần phải chọn tích chọn sản phẩm trong giỏ hàng trước khi bấm "Pay" nếu không sẽ nhảy lỗi.
+### 🗄️ **2. Cài đặt cơ sở dữ liệu**
 
-### 4. Thông tin liên hệ
+- Mở **MySQL Workbench**:
+  - Tạo database tên `ekomart`
+  - Vào `Server → Data Import`
+  - Chọn `Import from Dump Project Folder`
+  - Chọn thư mục `db-web` trong thư mục vừa clone
+  - Bấm **Start Import**
 
-Liên hệ cho Lê Huỳnh Như Nguyệt thông qua group Zalo nếu gặp bất cứ trục trặc nào trong quá trình chạy project
+### 💻 **3. Mở và chạy project**
+
+- Mở **IntelliJ IDEA**:
+  - `File → Open → demo` (trong thư mục clone)
+  - Mở file `application.yaml`, chỉnh sửa:
+    ```yaml
+    username: <Tên người dùng MySQL>
+    password: <Mật khẩu MySQL>
+    ```
+  - **RUN** project tại địa chỉ: [http://localhost:8888/login](http://localhost:8888/login)
+
+### 🌿 **4. Làm việc với Git**
+
+- Tạo nhánh mới theo cú pháp: `dev_<tên của bạn>`
+- Merge code từ `main` về nhánh mới để phát triển
+
+---
+
+## ⚠️ **Lưu Ý**
+
+- Tất cả tài khoản mặc định có mật khẩu: `123`
+- Một số tính năng có thể gặp lỗi:
+  - Ví dụ: cần chọn sản phẩm trong giỏ hàng trước khi bấm **"Pay"**
+
+---
+
+## 📬 **Liên Hệ Hỗ Trợ**
+
+📱 **Lê Huỳnh Như Nguyệt** (Liên hệ qua nhóm Zalo)
