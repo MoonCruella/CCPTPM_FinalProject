@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - dev_nguyet
+      - dev_nghia
 
 jobs:
   jira-in-progress:
