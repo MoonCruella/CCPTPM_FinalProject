@@ -37,4 +37,4 @@ jobs:
         uses: atlassian/gajira-transition@v3
         with:
           issue: ${{ steps.extract.outputs.jira_key }}
-          transition: "In Progress"
+          transition: "Đã nhận nhiệm vụ"
