@@ -3,8 +3,7 @@ name: Jira In Progress on Push
 on:
   push:
     branches:
-      - dev_nguyet
-      - dev_nghia
+     - dev_*  
 
 jobs:
   jira-in-progress:
