@@ -10,10 +10,22 @@ jobs:
   jira-in-progress:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Debug commit message
+        run: |
+          echo "Commit message: ${{ github.event.commits[0].message }}"
+
       - name: Extract Jira Issue Key
         id: extract
         run: |
-          echo "jira_key=$(echo '${{ github.event.head_commit.message }}' | grep -o '[A-Z]\+-[0-9]\+')" >> $GITHUB_OUTPUT
+          key=$(echo '${{ github.event.commits[0].message }}' | grep -o '[A-Za-z]\+-[0-9]\+')
+          echo "jira_key=$key" >> $GITHUB_OUTPUT
+
+      - name: Debug Jira key
+        run: |
+          echo "Extracted Jira key: ${{ steps.extract.outputs.jira_key }}"
 
       - name: Login to Jira
         uses: atlassian/gajira-login@v3
@@ -27,5 +39,3 @@ jobs:
         with:
           issue: ${{ steps.extract.outputs.jira_key }}
           transition: "In Progress"
-
-
