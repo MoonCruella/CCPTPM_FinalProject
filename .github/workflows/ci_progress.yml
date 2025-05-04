@@ -25,7 +25,6 @@ jobs:
         run: |
           key=$(echo '${{ github.event.commits[0].message }}' | grep -o '[A-Za-z0-9]\+-[0-9]\+')
           echo "jira_key=$key" >> $GITHUB_OUTPUT
-
       - name: Debug Jira key
         run: |
           echo "Extracted Jira key: ${{ steps.extract.outputs.jira_key }}"
