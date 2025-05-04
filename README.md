@@ -31,7 +31,7 @@
 
 ## ⚙️ **Cơ Chế Vận Hành**
 
-**Hệ thống gồm 3 vai trò chính:**
+**Hệ thống gồm 3 vai trò:**
 
 - 👤 **USER (Khách hàng):**
 
