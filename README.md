@@ -47,7 +47,7 @@
 - 👨‍💻 **ADMIN (Quản trị viên):**
   - Quản lý người dùng.
   - Duyệt shop mới và sản phẩm.
-  - Tạo/phân loại danh mục sản phẩm.
+  - Tạo/sửa/xóa danh mục sản phẩm.
 
 ---
 
@@ -59,7 +59,7 @@
 | **MySQL Workbench**      | Quản lý cơ sở dữ liệu           |
 | **Docker**               | Đóng gói & triển khai ứng dụng  |
 | **Postman**              | Kiểm thử API                    |
-| **Github + TortoiseGit** | Quản lý mã nguồn, làm việc nhóm |
+| **Github + TortoiseGit** | Quản lý mã nguồn                |
 
 ---
 
@@ -82,8 +82,8 @@
 ### 💻 **3. Mở và chạy project**
 
 - Mở **IntelliJ IDEA**:
-  - `File → Open → demo` (trong thư mục clone)
-  - Mở file `application.yaml`, chỉnh sửa:
+  - `File → Open → demo` (trong thư mục *ekomart* của thư mục clone)
+  - Mở file `application.yaml`, chỉnh sửa phần cấu hình database:
     ```yaml
     username: <Tên người dùng MySQL>
     password: <Mật khẩu MySQL>
@@ -94,6 +94,7 @@
 
 - Tạo nhánh mới theo cú pháp: `dev_<tên của bạn>`
 - Merge code từ `main` về nhánh mới để phát triển
+- Commit code lên **develop** , **không được** commit vào nhánh **main**
 
 ---
 
