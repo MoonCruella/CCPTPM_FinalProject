@@ -147,18 +147,20 @@ public class cartController {
 	public String paymentCart(@ModelAttribute("productPayment") productPayment ProductPayment, Model model,
 			RedirectAttributes redirectAttributes, HttpSession session) {
 		Optional<UserInfo> user = userservice.findByName((String)session.getAttribute("username"));
-		UserInfo userInfo = user.get();
-		List<Address> addressUser = addre.findByUser(userInfo);
-//		
+		if(user.isPresent()){
+			UserInfo userInfo = user.get();
+			List<Address> addressUser = addre.findByUser(userInfo);
+//
 //		List<AddresModel> address= new ArrayList<AddresModel>();
 
 //		BeanUtils.copyProperties(addressUser, address);
 //		model.addAttribute("addressUser",addressUser);
 
 //		List<AddressDTO> address=addre.findAddressesByUserId(1L);
-		model.addAttribute("addressUser", addressUser);
-		model.addAttribute("productPayment", new productPayment());
+			model.addAttribute("addressUser", addressUser);
+			model.addAttribute("productPayment", new productPayment());
 
+		}
 		if (ProductPayment == null) {
 			// Kiểm tra nếu đối tượng ProductPayment là null
 			System.out.println("ProductPayment is null!");
