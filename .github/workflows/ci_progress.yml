@@ -16,7 +16,11 @@ jobs:
       - name: Debug commit message
         run: |
           echo "Commit message: ${{ github.event.commits[0].message }}"
-
+      - name: List transitions to debug
+        run: |
+          curl -u "${{ secrets.JIRA_USER_EMAIL }}:${{ secrets.JIRA_API_TOKEN }}" \
+            -H "Accept: application/json" \
+            https://${{ secrets.JIRA_BASE_URL }}/rest/api/2/issue/${{ steps.extract.outputs.jira_key }}/transitions
       - name: Extract Jira Issue Key
         id: extract
         run: |
