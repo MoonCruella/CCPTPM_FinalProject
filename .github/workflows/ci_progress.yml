@@ -3,7 +3,7 @@ name: Jira In Progress on Push
 on:
   push:
     branches:
-      - 'dev_*'   
+      - dev_nguyet
 
 jobs:
   jira-in-progress:
