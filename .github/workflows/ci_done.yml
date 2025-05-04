@@ -26,4 +26,4 @@ jobs:
         uses: atlassian/gajira-transition@v3
         with:
           issue: ${{ steps.extract.outputs.jira_key }}
-          transition: "Done"
+          transition: "Đã hoàn thành nhiệm vụ"
